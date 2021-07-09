@@ -1,0 +1,1 @@
+![Arquitetura cliente servidor](https://i.pinimg.com/originals/f9/d3/60/f9d360043adc4eb65b78730fe9cf4375.jpg)
