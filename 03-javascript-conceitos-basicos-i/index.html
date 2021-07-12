@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conceitos Básicos de JS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body class="container">
+        <h1> Conceitos Básicos I - Javascript</h1>
+        <br>
+        <div id="variavel-e-tipos-de-dados">
+            <h3>Seção: Variáveis e Tipos de Dados</h2>
+            <label><b>Dados aleatórios:</b></label>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary"><b>Variável tipo string: </b><span id='tipoString'></span></li>
+                <li class="list-group-item list-group-item-secondary"><b>Variável tipo inteira: </b><span id='tipoInt'></span></li>                    <li class="list-group-item list-group-item-success"><b>Variável tipo float: </b><span id='tipoFloat'></span></li>
+                <li class="list-group-item list-group-item-danger"><b>Variável tipo booleano: </b><span id='tipoBooleano'></span></li>
+                <li class="list-group-item list-group-item-warning"><b>Variável tipo array: </b><span id='tipoArray'></span></li>
+                <li class="list-group-item list-group-item-info"><b>Variável tipo array na posição zero: </b><span id='tipoArray[0]'></span></li>
+                <li class="list-group-item list-group-item-light"><b>Variável tipo objeto: </b><span id='tipoObject.funcao'></span></li>
+            </ul>
+            <script type="text/javascript" src='variaveisETipoDados.js'></script>
+        </div>
+        <br>
+        <div id="estruturas-condicionais">
+            <h3>Seção: Estruturas Condicionais</h3>
+            <label><b>Formulário 1</b></label>
+            <form>
+                <label>Qual a sua idade? </label>
+                <input type="text" id=idade required='required'>
+                <input type="submit" onclick="ageProcessing()" value="Enviar"></input>
+                <span id='idade-processada'></span>
+            </form>
+            <br>
+            <label><b>Formulário 2</b></label>
+            <form>
+                <label>Informe o genêro que você se identifica: </label>
+                <select id="sexo">
+                    <option value='f'>Feminino</option>
+                    <option value='m'>Masculino</option>
+                    <option value='n'>Não binário</option>
+                </select>
+                <input type="submit" value="Informar" onclick="pronounProcessing()">
+                <span id="pronome"></span>
+            </form>
+            <script type="text/javascript" src='estruturasCondicionais.js'></script>
+        </div>
+        <br>
+        <div id="operacoes-matematicas">
+            <h3>Seção: Operações Matemáticas</h3>
+            <label><b>Vamos fazer contas:</b></label>
+            <p>Informe o primeiro valor: <input required="required" id=valor1 type="number"></p>
+            <p>Informe o segundo valor: <input required="required" id=valor2 type="number"></p>
+            <p>Selecione o tipo de cálculo:
+                <select id="calc">
+                    <option value="soma">Soma</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="multiplicao">Multiplicao</option>
+                    <option value="divisao">Divisão</option>
+                    <option value="modulo">Resto da Divisão</option>
+                </select>
+            </p>
+            <input type="submit" value="Calcular" onclick="processaCalculo()">
+            <script type="text/javascript" src="operacoesMatematicas.js"></script>
+        </div>
+        <br>
+        <div id="estruturas-repeticao">
+            <h3>Seção: Estruturas de Repetição</h3>
+        </div>
+    </body>
+</html>
