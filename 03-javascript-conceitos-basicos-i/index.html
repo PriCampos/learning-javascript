@@ -55,17 +55,89 @@
                 <select id="calc">
                     <option value="soma">Soma</option>
                     <option value="subtracao">Subtração</option>
-                    <option value="multiplicao">Multiplicao</option>
+                    <option value="multiplicao">Multiplição</option>
                     <option value="divisao">Divisão</option>
                     <option value="modulo">Resto da Divisão</option>
                 </select>
             </p>
             <input type="submit" value="Calcular" onclick="processaCalculo()">
-            <script type="text/javascript" src="operacoesMatematicas.js"></script>
+            <script type="text/javascript" src="operadoresMatematicos.js"></script>
         </div>
         <br>
         <div id="estruturas-repeticao">
             <h3>Seção: Estruturas de Repetição</h3>
+            <label><b>Usando for</b></label>
+            <p>Imprima os valores de 1 a 10: <input type="submit" value="Mostrar lista" onclick="imprimirValoresComFor()"></p>
+            <br>
+            <label><b>Usando while</b></label>
+            <p>Imprima os valores de 1 a 10: <input type="submit" value="Mostrar lista" onclick="imprimirValorescomWhile()"></p>
+            <br>
+            <label><b>Usando do-while</b></label>
+            <p>Imprima os valores de 1 a 10: <input type="submit" value="Mostrar lista" onclick="imprimirValorescomDoWhile()"></p>
+            <script type="text/javascript" src="estruturasRepeticao.js"></script>
+        </div>
+        <br>
+        <div id="operadores-logicos">
+            <h3>Seção: Operadores Lógicos</h3>
+            <p>Considerando que: <b><span id="statusChuva"></span></b> e <b><span id="statusRelampejar"></span></b></p>
+            <p id="msgContexto"></p>
+            <label><b>Usando o operador Lógico: AND</b></label>
+            <p>Reposta: somente se chover e relampejar</p>
+            <input type="submit" value="Clique para saber se vou sair" onclick="condicaoSairDeCasaAnd()">
+            <br><br>
+            <label><b>Operador Lógico: OR</b></label>
+            <p>Reposta: somente se chover, somente se relampejar, chovendo e relampejando</p>
+            <input type="submit" value="Clique para saber se vou sair" onclick="condicaoSairDeCasaOR()">
+            <br><br>
+            <label><b>Operador Lógico: NOT para relampejar e usando o AND</b></label>
+            <p>Reposta: somente se chover e relampejar</p>
+            <input type="submit" value="Clique para saber se vou sair" onclick="condicaoSairDeCasaNOT()">
+            <script type="text/javascript" src="operadoresLogicos.js"></script>
+        </div>
+        <br>
+        <div id="operadores-relacionais">
+            <h3>Seção: Operadores Relacionais</h3>
+            <p><b>Teste com Ternário</b></p>
+            <p>Contexto: Se a nota do aluno for maior ou igual a 70, ele é aprovado.</p>
+            <label>Informe a nota do aluno</label>
+            <input id="nota-aluno" type="number" required="required">
+            <input type="submit" value="Enviar Nota" onclick="processaNota()">
+            <span id="status-aprovacao"></span>
+            <script type="text/javascript" src="operadoresRelacionais.js"></script>
+        </div>
+        <br>
+        <div id="operadores-tipo-js">
+            <h3>Seção: Operadores tipo javascript e math</h3>
+            <p><b>Uso do typeof</b></p>
+            <p><b>Verificar o tipo de uma variável que contém um numérico: </b><span id="typeof-number"></span></p>
+            <p><b>Verificar o tipo de uma variável que contém uma string: </b><span id="typeof-string"></span></p>
+            <p><b>Verificar o tipo de uma variável que contém um array: </b><span id="typeof-array"></span></p>
+            <br>
+            <p><b>Uso do instanceof</b></p>
+            <p><b>Retorna verdadeiro ou falso se a variável [1, 2, 3] é do tipo array: </b><span id="instanceof-array"></span></p>
+            <br>
+            <p><b>Uso de Math</b></p>
+            <p><b>Imprimir o valor de PI usando Math: </b><sapn id="valor-de-pi"></sapn></p>
+            <script type="text/javascript" src="operadoresTipoJSEMath.js"></script>
+        </div>
+        <br>
+        <div id="conversao-de-numeros">
+            <h3>Seção: Conversão</h3>
+            <p><b>Converte string em inteiro ou flutuante: </b><span id="converte-string-num"></span></p>
+            <p><b>Converte em flutuante: </b><span id="converte-float"></span></p>
+            <p><b>Converte em inteiro: </b><span id="converte-inteiro"></span></p>
+            <p><b>Converte em String:</b><span id="converte-string"></span></p>
+            <p><b>Captura dia da data atual: </b><span id="captura-data"></span></p>
+            <script type="text/javascript" src="conversaoNumeros.js"></script>
+        </div>
+        <br>
+        <div id="intervalos e timeout">
+            <h3>Seção: Trabalhando com intervalos e timeout</h3>
+            <input type="submit" value="Interval: clique para ver a mensagem a cada 5 segundos" onclick="controleTempoInterval()">
+            <script type="text/javascript" src="intervalosETimeout.js"></script>
+            <br><br>
+            <input type="submit" value="Timeout: clique para ver a mensagem após 5 segundos" onclick="controleTempoTimeout()">
+            <script type="text/javascript" src="intervalosETimeout.js"></script>
         </div>
     </body>
 </html>

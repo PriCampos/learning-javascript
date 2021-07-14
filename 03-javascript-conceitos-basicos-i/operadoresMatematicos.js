@@ -1,7 +1,40 @@
+/*
+    Operadores Aritméticos:
+        Adição +
+        Subtração -
+        Multiplicação *
+        Exponenciação ** ou Math.pow(x,y)
+        Divisão /
+        Módulo %
+        Incremento -- //operação uniária
+        Decremento ++
+
+    Operadores de Atribuição
+        x = y
+        x += y ou x = x + y
+        x -= y ou x = x - y
+        x *= y ou x = x * y
+        x /= y ou x = x / y
+        x %= y ou x = x % y
+        x **= y ou x = x ** y
+
+    Precendência
+        Agrupamento de expressão: (x + y)
+        Membro: person.name
+        Membro: person["Priscila"]
+        Chamada de função: myfunction()
+        Criar: new date()
+        Incrementar e postar i++
+        Decrementar e postar i--
+        Incremento do prefixo ++i
+        Decremento do prefixo --i
+*/
+
 var valor1 = 0
 var valor2 = 0
 var tipoCalculo = ''
 var tipoCalculoSelecionado = ''
+var resultado = ''
 
 function obtemDados(){
     valor1 = parseInt(document.getElementById('valor1').value)
@@ -10,30 +43,33 @@ function obtemDados(){
     tipoCalculoSelecionado = tipoCalculo.options[tipoCalculo.selectedIndex].value
 }
 
+function exibeResultadoCalculo (){
+    alert('O resultado do cálculo é: ' + resultado)
+}
+
 function calculaSoma() {
     resultado = valor1 + valor2
-    console.log(resultado)
-    alert('Resultado é: ' + resultado)
+    exibeResultadoCalculo()
 }
 
 function calculaSubtracao() {
     resultado = valor1 - valor2
-    alert('Resultado é: ' + resultado)
+    exibeResultadoCalculo()
 }
 
 function calculaMultiplicacao() {
     resultado = valor1 * valor2
-    alert('Resultado é: ' + resultado)
+    exibeResultadoCalculo()
 }
 
 function calculaDivisao() {
     resultado = valor1 / valor2
-    alert('Resultado é: ' + resultado)
+    exibeResultadoCalculo()
 }
 
 function calculaRestoDivisao() {
     resultado = valor1 % valor2
-    alert('Resultado é: ' + resultado)
+    exibeResultadoCalculo()
 }
 
 function processaCalculo() {

@@ -5,10 +5,10 @@ numero = 24
 
 //Principais Tipos de Dados
 var nome = 'Priscila' //string
-var idade = 15 //int
+var idade = 37 //int
 var altura = 1.73 //float
 var ativo = true //booleano
-var hobby = ['desenhar', 'séries', 'cozinhar', 'crochê'] //vertor(array)
+var hobby = ['desenhar', 'séries', 'cozinhar', 'crochê', 'livros', 'jardinagem'] //vertor(array)
 var dadosProfissionais = {
     funcao: "Quality Analyst Consuntant",
     tempoExperiencia: '+12',
