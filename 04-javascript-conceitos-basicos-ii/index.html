@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Conceitos Básicos II</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="introducao-arrays">
+            <h3>Introdução aos Arrays</h3>
+            <p>Arrays também são conhecidos como vetores ou matrizes unidimencionais.</p>
+            <p><b>Imprimir nome de alunos: </b> <span id="nomes-alunos"></span></p>
+            <p><b>Imprimir nota alunos: </b> <span id="notas-alunos"></span></p>
+            <p><b>Imprimir nome do primeiro aluno: </b><span id="nome-aluno[0]"></span></p>
+            <p><b>Imprimir lista de nomes após alterar um nome via índice: </b><span id="lista-nome-alterada"></span></p>
+            <p><b>Imprimir nome de aluno inexistente: </b><span id="nome-aluno-inexistente"></span></p>
+            <p><b>Imprimir lista atualizada com novo aluno: </b><span id="lista-com-novo-aluno"></span></p>
+            <p><b>Tamanho do array da lista de alunos: </b><span id="tamanho-da-lista-alunos"></span></p>
+            <p><b>Ordernar arrary de nome de bairros ['a', 'c', 'd', 'b']: </b><span id="nome-bairros-ordenados"></span></p>
+            <p><b>Imprimir notas de forma ordenada com função lambda: </b><span id="ordernar-notas"></span></p>
+            <p><b>Imprimir lista de notas após excluir os últimos dois registro com delete e splice: </b><span id="excluir-ultima-nota"></span></p>
+            <p><b>Imprimir nova lista com splice: </b><span id="lista-nova-splice"></span></p>
+            <p><b>Imprimir lista com o último elemento removido: </b><span id="lista-notas-sem-ultima-nota"></span></p>
+            <p><b>Imprimir elemento removido do array: </b><span id="item-eliminado-array"></span></p>
+            <p><b>Imprimir array com o primeiro elemento retirado: </b><span id="lista-notas-sem-primeiro-elemento"></span></p>
+            <p><b>Imprimir array com o primeiro elemento incluído: </b><span id="lista-notas-com-primeiro-elemento"></span></p>
+            <p><b>Imprimir novo array gerado a partir de um índice de outro array: </b><span id="novo-array-frutas"></span></p>
+            <p><b>Imprimir array par concatenado a um impar: </b><span id="array-concatenado"></span></p>
+            <p><b>Imprimir array bidirecional: </b><span id="array-bidirecional"></span></p>
+            <p><b>Imprimir array com separador diferente: </b><span id="array-seprado-*"></span></p>
+            <script type="text/javascript" src="arrays.js"></script>
+        </div>
+        <br>
+        <div id="aprendendo-foreach">
+            <h3>Aprendendo com Foreach</h3>
+            <input type="submit" value="clique para ver lista de dispotopias" onclick="imprimirDistopias()">
+            <input type="submit" value="clique para ver lista de dispotopias" onclick="imprimirDistopiasDois()">
+            <span id="lista"></span>
+            <span id="lista-dois"></span>
+            <script src="foreach.js"></script>
+        </div>
+        <div id="aprendendo-map">
+            <h3>Apredendo a uitlizar o map</h3>
+            <input type="submit" value=" imprimir array impar * 2" onclick="imprimirArrayImparMultiplicadopor2()">
+            <input type="submit" value="imprimir array calculo" onclick="retornaArrayCalculo()">
+            <script src="map.js"></script>
+        </div>
+        <div id="aprendendo-filter">
+            <h3>Aprendendo a utilizar filter</h3>
+            <input type="submit" value="imprimir cores frias" onclick="imprimeCoresFrias()">
+            <input type="submit" value="imprimir no condole filmes netflix" onclick="imprimeFilmesNetflix()">
+            <script src="filter.js"></script>
+        </div>
+        <div id="apredendo-reduce">
+            <h3>Apredendo a utilizar Reduce</h3>
+        </div>
+    </body>
+</html>
