@@ -7,5 +7,5 @@
 **Obs:** Para testes html foi utilizado o servidor Python.
 
 ``` shell
-python3 -m http.server _port
+python3 -m http.server port
 ```
