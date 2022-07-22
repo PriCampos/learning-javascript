@@ -1,0 +1,30 @@
+Nível de Teste,Abordagem,Validação,Ambiente,Mais Informações,Ferramentas
+Unidade,"Cobertura 80% 
+Cenários positivos (básicos e parâmetros opcionais)
+Cenários negativos (entradas válidas e inválidas)","Estrutura
+Atributo","dev
+hml
+main",Implantado na pipeline,Jest
+Contrato,"Perspectiva Consumer ","Estrutura da resposta
+Status HTTP","dev
+hml
+main",Implantado na pipeline,Pact
+Integração individualmente (ex: POST),"Cenários positivos (básicos e parâmetros opcionais)
+Cenários negativos (entradas válidas e inválidas)","Status HTTP
+Carga útil de resposta","dev
+hml",Implantado na pipeline,PactumJS
+Integração individualmente,Testes de segurança (autorização ),"Status HTTP
+Carga útil de resposta","dev
+hml",Implantado na pipeline,PactumJS
+Integração individualmente,Testes destrutivo (stress e performance),"Latência
+Status HTTP
+Carga útil de resposta","dev
+hml",Não está na pepiline,Artillery
+Integração imitando ações da usuária (end-2-end),Cenários positivos (básicos ),Confiabilidade,"dev
+hml",Implantado na pipeline,PactumJS
+manual,"Testes funcionais caixa cinza
+Testes de segurança (autorização e permissão)","LGPD
+Acessibilidade
+Fuso horário","dev
+hml
+main",N/A,Postman
